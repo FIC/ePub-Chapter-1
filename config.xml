@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.fic.epub"
+	version 	= "1.0.1">
+
+	<name>FIC ePub</name>
+
+	<description>
+		Chap 1 test for FIC phonegap app 
+	</description>
+
+	<author href="http://github.com/FIC"
+		email="ruteggertrash@hotmail.com">
+		FIC
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<preference name="orientation" value="portrait" />
+</widget>
