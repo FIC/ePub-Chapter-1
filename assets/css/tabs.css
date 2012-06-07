@@ -1,0 +1,23 @@
+/* Specific to example one */
+
+#tabnav {padding: 0; margin: 0; width:530px;}
+
+#tabnav .nav { overflow: hidden; margin: 0 0 10px 0; }
+#tabnav .nav li {  float: left; margin: 0 10px 0 0; }
+#tabnav .nav li.last { margin-right: 0; }
+#tabnav .nav li a { display: block; padding: 2px 10px; background: #959290; color: white; font-size: 120%; text-align: center; border: 0; text-decoration: none}
+#tabnav .nav li a:hover { background-color: #111; }
+
+#tabnav ul { list-style: none;margin:0;}
+#tabnav ul li a { display: block; border-bottom: 1px solid #666; color: #666; font-family: Helvetica, Arial, sans-serif; -webkit-border-radius: 4px; }
+#tabnav ul li a:hover { background: #fe4902; color: white; }
+#tabnav ul li:last-child a { border: none; }
+
+/*#tabnav ul li.nav-one a.current, #tabnav ul.featured li a:hover { background-color: #0575f4; color: white; }
+#tabnav ul li.nav-two a.current, #tabnav ul.core li a:hover { background-color: #d30000; color: white; }
+#tabnav ul li.nav-three a.current, #tabnav ul.jquerytuts li a:hover { background-color: #8d01b0; color: white; }
+#tabnav ul li.nav-four a.current, #tabnav ul.classics li a:hover { background-color: #FE4902; color: white; }*/
+
+
+
+
