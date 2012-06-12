@@ -15,6 +15,7 @@
 <script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-1.8.20.custom.min.js"></script>
 <script type="text/javascript" src="assets/js/organictabs.jquery.js"></script>
+<script src="assets/js/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
 		
 <script type="text/javascript">
 	$(function(){
@@ -26,7 +27,10 @@
 			function() { $(this).removeClass('ui-state-hover'); }
 		);
 	});
-</script>x
+	$(function(){
+	$('.content').columnize();
+	});
+</script>
 <!-- <script>
         $(function() {
     
@@ -36,7 +40,6 @@
     
         });
     </script> -->
-	
 </head>
 <body> 
 
@@ -46,7 +49,7 @@
 <div class="above-h r">DR. VENKAT RAMAN</div>
 <h1 class="clear">Viscous Fluid Flow</h1>
 <img src="assets/images/2009-Class-HM.jpg" />
-<div class="center">THE UNIVERSITY OF TEXAS AT AUSTIN, COCKRELL SCHOOL OF ENGINEERING</div>
+<p class="clear">THE UNIVERSITY OF TEXAS AT AUSTIN, COCKRELL SCHOOL OF ENGINEERING</p>
 </div>
 <div id="c1">
 <div class="above-h">Chapter 1</div>
@@ -65,8 +68,8 @@ March 2012.</p>
 <div id="s1">
 <div class="above-h">Section 1</div>
 <h2>Viscous Fluid Flow</h2>
-<p>By comparing Eq. 0-26) with Eqs. (1-13), (1-]4), (1-18), (1-19), and (1-21), 
-we see that Eq. (1-26) can also be written as <img src="assets/images/1-27.png"/>
+<div class="content"><p>By comparing Eq. 0-26) with Eqs. (1-13), (1-14), (1-18), (1-19), and (1-21), 
+we see that Eq. (1-26) can also be written as <img src="assets/images/1-27.png" class="no-b"/>
 </p>
 <p>That is, each velocity derivative can be resolved into a strain rate plus an 
 angular velocity. The angular velocity does not distort the element, so that 
@@ -74,19 +77,18 @@ only the strain rate will cause a viscous stress, a fact which is exploited in
 Chap. 2.</p>
 <p>To summarize, we have shown that all the kinematic properties of
 fluid flow-acceleration, translation, angular velocity, rate of dilatation, and
-shear-strain rate-are directly related to the fluid velocity vector V = (u, ν, w).
+shear-strain rate-are directly related to the fluid velocity vector V = (u, &nu;, w).
 These relations are identical to the equivalent expressions from infinitesimal
-solid mechanics, if (u, ν, w) are instead taken to be components of the
+solid mechanics, if (u, &nu;, w) are instead taken to be components of the
 displacement vector. This analogy between fluid and solid continuum mechanics
 is sometimes used to produce the equations of motion of a viscous
 linear fluid as a direct carryover from the equations of linear (Hookean) elasticity,
 with which students are often more familiar.</p> 
-         
-<p>&nbsp;</p>
+</div>
 
 <h3>1-3.4 The Transport Properties of a Fluid</h3> 
 
-<p>The three so-called transport properties are the coefficients of viscosity, thermal
+<div class="content"><p>The three so-called transport properties are the coefficients of viscosity, thermal
 conductivity, and diffusion, so named because of the relation they bear
 to movement, or transport, of momentum, heat, and mass, respectively.
 Thus it is now popular in the field of chemical engineering to refer to a
@@ -101,12 +103,18 @@ genuinely analogous. The perfect analogy, when it exists, is so striking that
 Bird et al. (2001) have devoted an entire textbook to an exposition of analogies
 among this trinity of problems. We should note now that the analogy
 fails in multidimensional problems because heat and mass flux are vectors
-while momentum flux (stress) is a tensor. this is a change</p>
-
-<p>&nbsp;</p>
+while momentum flux (stress) is a tensor.</p>
+</div>
 
 <h3>1-3.5 The Coefficient of Viscosity</h3>
 
+<div class="half"><p>FIGURE 1-15: A fluid shear between two plates.</p>
+<video preload="auto" poster="assets/video/viscosity/fluid_viscosity_anim.jpg" controls="controls"> 
+    <source src="assets/video/viscosity/fluid_viscosity_anim.mp4" type="video/mp4">
+    <source src="assets/video/viscosity/fluid_viscosity_anim.webm" type="video/webm">
+    <source src="assets/video/viscosity/fluid_viscosity_anim.ogv" type="video/ogv">
+</video>
+</div>
 <p>The layperson knows from experience what viscosity means and associates
 it with the ability of a fluid to flow freely. Heavy oil takes a long time to flow
 out of a can. Light oil flows out quickly. The disastrous Boston molassestank
@@ -121,91 +129,48 @@ the speed of sound is the time it takes an echo to return from a mountainside.
 It is an intriguing fact that the flow of a viscous liquid out of the bottom
 of a cup is a difficult problem for which no analytic solution exists at present.</p>
 
-<div class="center"><p>FIGURE 1-15: A fluid shear between two plates.</p></div>
 
-<!-- <div id="tabs">
-	<ul>
-		<li><a href="#tabs-1">Oil Molecules</a></li>
-		<li><a href="#tabs-2">Water Molecules</a></li>	
-	</ul>
-	<div id="tabs-1">
-		<video preload="auto" poster="assets/video/gizmo-poster.jpg" controls="controls" width="530" height="305"> 
-		    <source src="assets/video/gizmo/gizmo.mp4" type="video/mp4">
-		    <source src="assets/video/gizmo/gizmo.webm" type="video/webm">
-		    <source src="assets/video/gizmo/gizmo.ogv" type="video/ogv">
-		</video>
-	</div>
-	<div id="tabs-2">
-		<video preload="auto" poster="assets/video/viscosity-poster.jpg" controls="controls" width="530" height="305"> 
-		    <source src="assets/video/viscosity/algae_tube.mp4" type="video/mp4">
-		    <source src="assets/video/viscosity/viscosity.webm" type="video/webm">
-		    <source src="assets/video/viscosity/viscosity.ogv" type="video/ogv">
-		</video>
-	</div>
-</div>  -->
-
-
-<video preload="auto" poster="assets/video/gizmo-poster.jpg" controls="controls" width="530" height="305"> 
-    <source src="assets/video/gizmo/gizmo.mp4" type="video/mp4">
-    <source src="assets/video/gizmo/gizmo.webm" type="video/webm">
-    <source src="assets/video/gizmo/gizmo.ogv" type="video/ogv">
-</video>
-
-<p>&nbsp;</p>
-
+<div class="content">
 <p>A more fundamental approach to viscosity shows that it is the property of a
 fluid which relates applied stress to the resulting strain rate. The general relations
 are considered in Sec. 2-4. Here we consider a simple and widely
 used example of a fluid sheared between two plates, as in Fig. 1-15. This
-geometry is such that the shear stress τ xy must be constant throughout the
+geometry is such that the shear stress &tau; xy must be constant throughout the
 fluid. The motion is in the x direction only and varies with y, u = u(y) only.
 Thus there is only a single finite strain rate in this flow:</p>
 
-<img src="assets/images/1-28.png"/> 
+<img src="assets/images/1-28.png" class="no-b"/> 
 
 <p>If one performs this experiment, one finds that, for all the common fluids,
 the applied shear is a unique function of the strain rate:</p>
 
-<img src="assets/images/1-29.png"/> 
+<img src="assets/images/1-29.png" class="no-b"/> 
 
-<p>Since, for a given motion V of the upper plate, τ xy is constant, it follows
-that in these fluids εxy, and hence duldy, is constant, so that the resulting
-velocity profile is linear across the plate, as sketched in Fig. 1-15. This is
-true regardless of the actual form of the functional relationship in Eq. (1-29).
-If the no-slip condition holds, the velocity profile varies from zero at the
-lower wall to Vat the upper wall (Prob. 1-16 considers the case of a slip
-boundary condition). Repeated experiments with various values of τ xy will
-establish the functional relationship Eq. (1-29). For simple fluids such as
-water, oils, or gases, the relationship is linear or newtonian:</p>
+<p>Since, for a given motion V of the upper plate, &tau; xy is constant, it follows that in these fluids &Sigma;xy, and hence duldy, is constant, so that the resulting velocity profile is linear across the plate, as sketched in Fig. 1-15. This is true regardless of the actual form of the functional relationship in Eq. (1-29). If the no-slip condition holds, the velocity profile varies from zero at the lower wall to Vat the upper wall (Prob. 1-16 considers the case of a slip boundary condition). Repeated experiments with various values of &tau; xy will establish the functional relationship Eq. (1-29). For simple fluids such as water, oils, or gases, the relationship is linear or newtonian: </p>
 
-<img src="assets/images/1-291.png"/>
+<img src="assets/images/1-291.png" class="no-b"/>
 
 <p>or</p>
 
-<img src="assets/images/1-292.png"/>
+<img src="assets/images/1-292.png" class="no-b"/>
 
-<p>The quantity μ, called the coefficient of viscosity of a newtonian fluid, is
-what handbooks commonly quote when listing the viscosity of a fluid (see
-App. A). Actually, there is also a second coefficient, λ, related to bulk fluid
-expansions, but it is rarely encountered in practice (see Sec. 2-4). Equation
-(1-30) shows that the dimensions of μ are stress-time: N•s/m2 [or kg/(m•s)]
-in metric units and lbf•s/ft2 [or slugs/ft•s)] in English units. The conversion
-factor is</p>
+<p>The quantity &mu;, called the coefficient of viscosity of a newtonian fluid, is what handbooks commonly quote when listing the viscosity of a fluid (see App. A). Actually, there is also a second coefficient, &lambda;, related to bulk fluid expansions, but it is rarely encountered in practice (see Sec. 2-4). </p>
 
-<img src="assets/images/1-30.png"/>
+<img src="assets/images/1-30.png" class="no-b"/>
 
-<p>The coefficient μ is a thermodynamic property and varies with temperature
+<p>The coefficient &mu; is a thermodynamic property and varies with temperature
 and pressure. Data for common fluids are given in App. A.</p>
+</div>
 
 <h3>1-3.6 Viscosity as a Function of Temperature and Pressure</h3>
 
-<p>The coefficient of viscosity of a newtonian fluid is directly related to molecular
+<div class="content"><p>The coefficient of viscosity of a newtonian fluid is directly related to molecular
 interactions and thus may be considered a thermodynamic property in
 the macroscopic sense, varying with temperature and pressure. The theory
 of the transport properties of gases and liquids is still being developed, and
 a comprehensive review is given by Hirschfelder et al. (1954). Extensive
 data on properties of fluids are given by Reid et al. (1987).
-No single functional relation μ(T, p) really describes</p>
+No single functional relation &mu;(T, p) really describes</p>
 
 <p>The curve labeled pseudoplastic in Fig. 1-16 is said to be shear-thinning, 
 since its slope (local viscosity) decreases with increasing stress. If the thin- 
@@ -220,29 +185,23 @@ analytic investigations of yielding materials under flow conditions. Yielding
 substances need not be linear but may show either dilatant or pseudoplastic
 behavior</p>
 
-<p>No single functional relation μ(T, p) really describes any large
-class of fluids, but reasonable accuracy (±20 percent) can be achieved by
+<p>No single functional relation &mu;(T, p) really describes any large
+class of fluids, but reasonable accuracy (&plusmn;20 percent) can be achieved by
 nondimensionalizing the data with respect to the critical point (Tc, Pc). This
 procedure is the so-called principle of corresponding states [Keenan
-(1941)], wherein the given property, here μ/ μe, is found to be roughly a
-function of T/Tc and PilΡc, the reduced temperature and pressure.
-This principle is not justified on thermodynamic grounds but arises simply
+(1941)], wherein the given property, here &mu;/ &mu;e, is found to be roughly a
+function of T/Tc and PilPc, the reduced temperature and pressure.</p>
+
+<p>This principle is not justified on thermodynamic grounds but arises simply
 from dimensional analysis and experimental observation. Since changes
 occur very rapidly near the critical point, Tc and Pc are known only approximately,
-and it is essentially impossible to measure μc accurately. Appendix
-A contains a table of critical constants (Tc, Pc, μc, kc) for common fluids,
+and it is essentially impossible to measure &mu;c accurately. Appendix
+A contains a table of critical constants (Tc, Pc, &mu;c, kc) for common fluids,
 which should be regarded as best-fit values.</p>
 
-<p>This principle is not justi√î¬®√Öed on thermodynamic grounds but arises simply 
-from dimensional analysis and experimental observation. Since changes 
-occur very rapidly near the critical point, Tc and Pc are known only approxi- 
-mately, and it is essentially impossible to measure ¬¨¬µc accurately. Appendix 
-A contains a table of critical constants (Tc, Pc, ¬¨¬µc, kc) for common √î¬®√áuids, 
-which should be regarded as best-√î¬®√Öt values. </p>
-
 <p>Figure 1-17 shows a recommended correlation of reduced viscosity
-μ/ μc vs. reduced temperature T/Tc and reduced pressure p/Pc' As
-stated, the accuracy for any given fluid is about ±20 percent. By examining
+&mu;/ &mu;c vs. reduced temperature T/Tc and reduced pressure p/Pc' As
+stated, the accuracy for any given fluid is about &plusmn;20 percent. By examining
 this figure, we can make the following general statements:</p>
 
 <ol>
@@ -255,6 +214,7 @@ this figure, we can make the following general statements:</p>
 <p>Since Pc for most fluids is greater than 10 atm (App. A), typical gas flow
 problems are at low reduced pressure and approximate the low-densitylimit
 curve of Fig. 1-17.</p>
+</div>
 
 </div>
 
