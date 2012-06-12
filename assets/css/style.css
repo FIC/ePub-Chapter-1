@@ -241,88 +241,88 @@ div#tabs ul li{
 
 /* Layout */
 @media screen and (min-width:200px) {
-#wrap {
-  margin: 0 auto;
-  max-width: 300px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
-  text-align: center;
-}
-#text-reset { text-align: left; }
-
-/* Home */
-#home, #c1, #s1 {max-width:300px; padding:30px 0; clear:both;}
-.half {
-	max-width:300px;
-	max-height:800px;
-	margin-top:50px 0 20px 0;
-}
-video {
-	width:300px;
-}
+	#wrap {
+	  margin: 0 auto;
+	  max-width: 300px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
+	  text-align: center;
+	}
+	#text-reset { text-align: left; }
+	
+	/* Home */
+	#home, #c1, #s1 {max-width:300px; padding:30px 0; clear:both;}
+	.half {
+		max-width:300px;
+		max-height:800px;
+		margin-top:50px 0 20px 0;
+	}
+	video {
+		width:300px;
+	}
 }
 @media screen and (min-width:480px) {
-#wrap {
-  margin: 0 auto;
-  max-width: 600px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
-  text-align: center;
-}
-#text-reset { text-align: left; }
-
-/* Home */
-#home, #c1, #s1 {max-width:600px; padding:30px 0; clear:both;}
-.half {
-	max-width:600px;
-	max-height:900px;
-	margin:0 0 30px 0;
-}
-video {
-	width:480px;
-	height:700px;
-}
+	#wrap {
+	  margin: 0 auto;
+	  max-width: 600px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
+	  text-align: center;
+	}
+	#text-reset { text-align: left; }
+	
+	/* Home */
+	#home, #c1, #s1 {max-width:600px; padding:30px 0; clear:both;}
+	.half {
+		max-width:600px;
+		max-height:900px;
+		margin:0 0 30px 0;
+	}
+	video {
+		width:480px;
+		height:700px;
+	}
 }
 @media screen and (min-width:1024px) {
-#wrap {
-  margin: 0 auto;
-  max-width: 996px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
-  text-align: center;
-}
-#text-reset { text-align: left; }
-
-/* Home */
-#home, #c1, #s1 {max-width:996px; padding:30px 0; clear:both;}
-.half {
-	max-width:500px;
-	height:750px;
-	margin:0 0 0 50px;
-	padding-left:50px;
-	border-left:1px solid #ccc;
-	float:right;
-	position:relative;
-	top:-40px;
-}
-video {
-	width:480px;
-	height:700px;
-}
+	#wrap {
+	  margin: 0 auto;
+	  max-width: 996px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
+	  text-align: center;
+	}
+	#text-reset { text-align: left; }
+	
+	/* Home */
+	#home, #c1, #s1 {max-width:996px; padding:30px 0; clear:both;}
+	.half {
+		max-width:500px;
+		height:750px;
+		margin:0 0 0 50px;
+		padding-left:50px;
+		border-left:1px solid #ccc;
+		float:right;
+		position:relative;
+		top:-40px;
+	}
+	video {
+		width:480px;
+		height:700px;
+	}
 }
 @media screen and (min-width: 1400px) {
-#wrap {
-  margin: 0 auto;
-  max-width: 1230px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
-  text-align: center;
-}
-#text-reset { text-align: left; }
-
-/* Home */
-#home, #c1, #s1 {max-width:1230px; padding:50px 0; clear:both; margin:0 auto;}
-.half {
-	max-width:500px;
-	height:750px;
-	margin:0 0 0 50px;
-	padding-left:50px;
-	border-left:1px solid #ccc;
-	float:right;
-}
-.first {
-	clear:both;
-}
+	#wrap {
+	  margin: 0 auto;
+	  max-width: 1230px; /* Max width for a 1024px resolution is 996px without a horizontal scroll bar */
+	  text-align: center;
+	}
+	#text-reset { text-align: left; }
+	
+	/* Home */
+	#home, #c1, #s1 {max-width:1230px; padding:50px 0; clear:both; margin:0 auto;}
+	.half {
+		max-width:500px;
+		height:750px;
+		margin:0 0 0 50px;
+		padding-left:50px;
+		border-left:1px solid #ccc;
+		float:right;
+	}
+	.first {
+		clear:both;
+	}
 }
